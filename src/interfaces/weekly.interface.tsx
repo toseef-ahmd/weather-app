@@ -1,7 +1,7 @@
 import IDateTime from "./base/datetime.interface";
-import IWeather from "./base/weather.interface";
+import IWeatherType from "./base/weather_type.interface";
 
-interface IWeeklyWeather extends IWeather, IDateTime {
+interface IWeeklyWeather extends IWeatherType, IDateTime {
     minTemperature: number;
     maxTemperature: number;
 }

@@ -7,7 +7,6 @@ interface CurrentWeatherProps {
 }
 
 const CurrentWeather: React.FC<CurrentWeatherProps> = ({ data, unit }) => {
-  // You might want to format the data or convert the temperature here
   return (
     <div>
       {/* Render current weather */}

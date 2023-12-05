@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import CurrentWeather from './current.component';
 import HourlyWeather from './hourly.component';
 import DailyWeather from './weekly.component';
-import { WeatherData } from '../interfaces/weatherData.interface';
+import IWeather  from '../interfaces/weather.interface';
 
-import {fetchWeatherData } from '../services/weather.service'; // assuming you have this file
+import {fetchWeatherData } from '../services/weather.service';
 
 const Dashboard: React.FC = () => {
-  const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
+  const [weatherData, setWeatherData] = useState<IWeather | null>(null);
   const [unit, setUnit] = useState<'celsius' | 'fahrenheit'>('celsius');
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
   };
 
   if (!weatherData) {
-    return <div>Loading...</div>; // You can replace this with a loading spinner or skeleton component
+    return <div>Loading...</div>; 
   }
 
   return (
