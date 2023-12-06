@@ -1,8 +1,8 @@
 import React from 'react';
-import IWeeklyWeather from '../interfaces/weekly.interface';
+import {IWeeklyWeather} from '../interfaces/weekly.interface';
 
 interface WeeklyWeatherProps {
-  data: IWeeklyWeather[];
+  data: Array<IWeeklyWeather>;
   unit: 'celsius' | 'fahrenheit';
 }
 

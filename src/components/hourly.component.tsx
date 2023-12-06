@@ -2,7 +2,7 @@ import React from 'react';
 import {IHourlyWeather} from '../interfaces/hourly.interface';
 // import _ from 'lodash';
 interface HourlyWeatherProps {
-  data: IHourlyWeather[];
+  data: Array<IHourlyWeather>;
   unit: 'celsius' | 'fahrenheit';
 }
 

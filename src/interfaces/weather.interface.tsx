@@ -9,12 +9,12 @@ export interface IWeather {
         // "summary": "Clear",
         // "icon": "clear-night",
     // }
-    hourly: IHourlyWeather[]; // 168 objects
+    hourly: Array<IHourlyWeather>; // 168 objects
     // [{
     //     "datetime": YYYY-MM-DD HH:MM:SS,
     //     "temperature_2m": 24.24,
     // }]
-    daily: IWeeklyWeather[]; //7 objects
+    daily: Array<IWeeklyWeather>; //7 objects
     // [{
         //     "datetime": YYYY-MM-DD,
         //     "summary": clear,
