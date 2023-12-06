@@ -1,8 +1,8 @@
-import ICurrentWeather from "./current.interface";
-import IWeeklyWeather from "./weekly.interface";
-import IHourlyWeather from "./hourly.interface";
+import {ICurrentWeather} from "./current.interface";
+import {IWeeklyWeather} from "./weekly.interface";
+import {IHourlyWeather} from "./hourly.interface";
 
-interface IWeather {
+export interface IWeather {
     current: ICurrentWeather; // 1 object
     // {
         // "time": "2023-12-05T21:30",
@@ -23,5 +23,3 @@ interface IWeather {
         //     "icon": "clear-day",
     // }]
 }
-
-export default IWeather;
