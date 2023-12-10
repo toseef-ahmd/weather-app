@@ -1,8 +1,8 @@
-import {IDateTime} from "./base/datetime.interface";
+import { IDateTime } from "./base/datetime.interface";
 import {ITemperature} from "./base/temperature.interface";
-import {IWeatherType} from "./base/weather_type.interface";
+import {IWeatherInfo} from "./base/weather_info.interface";
 
-export interface ICurrentWeather extends ITemperature, IDateTime, IWeatherType {
+export interface ICurrentWeather extends ITemperature, IWeatherInfo, IDateTime {
   windSpeed: number;
 }
 

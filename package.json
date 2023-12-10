@@ -12,6 +12,8 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.2",
+    "highcharts": "^11.2.0",
+    "highcharts-react-official": "^3.2.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "postcss": "^8.4.32",
@@ -20,8 +22,10 @@
     "tailwindcss": "^3.3.6"
   },
   "devDependencies": {
+    "@headlessui/react": "^1.7.17",
     "@types/autoprefixer": "^10.2.0",
     "@types/axios": "^0.14.0",
+    "@types/highcharts": "^7.0.0",
     "@types/lodash": "^4.14.202",
     "@types/moment": "^2.13.0",
     "@types/node": "^20.10.3",

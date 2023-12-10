@@ -1,12 +1,11 @@
-import './App.css'
-import Dashboard from './components/dashboard.component'
+import React from 'react'
+import Home from './pages/Home'
 
 function App() {
-
   return (
-    <>
-      <Dashboard />
-    </>
+    <div>
+      <Home />
+    </div>
   )
 }
 

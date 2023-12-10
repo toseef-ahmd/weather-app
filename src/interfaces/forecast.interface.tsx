@@ -1,20 +1,20 @@
 import {ICurrentWeather} from "./current.interface";
-import {IWeeklyWeather} from "./weekly.interface";
+import {IDailyWeather} from "./daily.interface";
 import {IHourlyWeather} from "./hourly.interface";
 
-export interface IWeather {
+export interface IForecast {
     current: ICurrentWeather; // 1 object
     // {
-        // "time": "2023-12-05T21:30",
+        // "time": "YYYY-MM-DD",
         // "summary": "Clear",
         // "icon": "clear-night",
     // }
     hourly: Array<IHourlyWeather>; // 168 objects
     // [{
-    //     "datetime": YYYY-MM-DD HH:MM:SS,
+    //     "datetime": YYYY-MM-DD,
     //     "temperature_2m": 24.24,
     // }]
-    daily: Array<IWeeklyWeather>; //7 objects
+    weekly: Array<IDailyWeather>; //7 objects
     // [{
         //     "datetime": YYYY-MM-DD,
         //     "summary": clear,

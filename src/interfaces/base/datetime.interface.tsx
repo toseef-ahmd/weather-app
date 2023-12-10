@@ -1,3 +1,4 @@
+
 export interface IDateTime {
-    datetime: string;
+    datetime: Date;
 }
