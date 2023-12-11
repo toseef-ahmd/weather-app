@@ -76,6 +76,8 @@ Weather Dashboard seamlessly integrates three key components:
 - **Daily Component**: Renders inside the Weekly Component. each card representing one day.
 - **Hourly Chart**: Visualizes temperature changes over the course of a day, offering insights into temperature trends and potential temperature fluctuations.
 
+## Interfaces
+Read here:  [interfaces](interfaces.md)
 ## Dependencies
 
 The application relies on a carefully curated set of dependencies:
