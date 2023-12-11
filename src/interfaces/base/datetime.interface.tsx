@@ -1,4 +1,3 @@
-
 export interface IDateTime {
-    datetime: Date;
+  datetime: Date
 }

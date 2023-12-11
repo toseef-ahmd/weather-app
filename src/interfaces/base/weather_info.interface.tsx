@@ -1,4 +1,4 @@
 export interface IWeatherInfo {
-    summary : string;
-    icon : string;
+  summary: string
+  icon: string
 }

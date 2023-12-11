@@ -1,74 +1,84 @@
-import React from 'react';
-import _ from 'lodash';
-import moment from 'moment';
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
+import React from "react"
+import _ from "lodash"
+import moment from "moment"
+import Highcharts from "highcharts"
+import HighchartsReact from "highcharts-react-official"
 
-import {IHourlyWeather} from '../interfaces/hourly.interface';
-import {TemperatureToDisplay}  from '../utils/data_parser.util';
+import { IHourlyWeather } from "../interfaces/hourly.interface"
+import { TemperatureToDisplay } from "../utils/data_parser.util"
 
 // import _ from 'lodash';
 interface HourlyWeatherProps {
-  title : string
-  data: Array<IHourlyWeather>;
-  unit: string;
-  selectedDay: number;
+  title: string
+  data: Array<IHourlyWeather>
+  unit: string
+  selectedDay: number
 }
 
-const HourlyWeather: React.FC<HourlyWeatherProps> = ({ title, data, unit, selectedDay }) => {
-  const weeklyData : Array<object>= _.chunk(data, 24); // Split data into 24 hour chunks to group it in 7 days forcast
+const HourlyWeather: React.FC<HourlyWeatherProps> = ({
+  title,
+  data,
+  unit,
+  selectedDay,
+}) => {
+  const weeklyData: Array<object> = _.chunk(data, 24) // Split data into 24 hour chunks to group it in 7 days forcast
 
-  const selectedDayData = weeklyData[selectedDay] as Array<IHourlyWeather>;
-  
-  const currentDate = moment(selectedDayData[0].datetime).format('dddd, MMMM Do YYYY');
+  const selectedDayData = weeklyData[selectedDay] as Array<IHourlyWeather>
 
-  const chartCategories = _.map(selectedDayData, entry => moment(entry.datetime).format('HH:mm'));
+  const currentDate = moment(selectedDayData[0].datetime).format(
+    "dddd, MMMM Do YYYY",
+  )
 
-  const chartData = _.map(selectedDayData, entry => {return TemperatureToDisplay(entry.temperature, unit);});
+  const chartCategories = _.map(selectedDayData, (entry) =>
+    moment(entry.datetime).format("HH:mm"),
+  )
+
+  const chartData = _.map(selectedDayData, (entry) => {
+    return TemperatureToDisplay(entry.temperature, unit)
+  })
 
   const chartOptions = {
     chart: {
-      type: 'spline'
+      type: "spline",
     },
     accessibility: {
       enabled: false,
     },
     title: {
-      text: `${title}`
+      text: `${title}`,
     },
     subtitle: {
-      text: `${currentDate}` 
+      text: `${currentDate}`,
     },
     xAxis: {
       categories: chartCategories,
-      tickmarkPlacement: 'on',
+      tickmarkPlacement: "on",
       title: {
-        text: 'Time of Day'
-      }
+        text: "Time of Day",
+      },
     },
     yAxis: {
       title: {
-        text: `Temperature ${unit}`
+        text: `Temperature ${unit}`,
       },
-      min: Math.min(...chartData) 
+      min: Math.min(...chartData),
     },
     tooltip: {
-      valueSuffix: ` ${unit}`
+      valueSuffix: ` ${unit}`,
     },
-    series: [{
-      name: 'Temperature',
-      data: chartData
-    }]
-  };
+    series: [
+      {
+        name: "Temperature",
+        data: chartData,
+      },
+    ],
+  }
 
   return (
     <div>
-      <HighchartsReact
-        highcharts={Highcharts}
-        options={chartOptions}
-      />
+      <HighchartsReact highcharts={Highcharts} options={chartOptions} />
     </div>
-  );
-};
+  )
+}
 
-export default HourlyWeather;
+export default HourlyWeather
