@@ -23,13 +23,17 @@ git clone [https://github.com/toseef-ahmd/weather-app.git](https://github.com/to
 cd weather-app
 
 4. Install dependencies:
-npm install
+
+`npm install`
 
 5. Linting
-npm run lint: checks for linting errors to ensure code consistency.
+
+`npm run lint`
+Checks for linting errors to ensure code consistency.
 
 6. Format
-npm run format: Formats the code using prettier.
+`npm run format`
+Formats the code using prettier.
 
 ## Running the Application
 
