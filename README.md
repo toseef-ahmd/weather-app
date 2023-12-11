@@ -89,4 +89,4 @@ This project is open-sourced under the permissive MIT License, allowing for free
 
 ## Contact
 
-If you have any questions or feedback, please feel free to reach out to [Your Name] via [Your Email] or any of the contact links provided.
+If you have any questions or feedback, please feel free to reach out to me via [tauseefahmed92b@gmail.com](tauseefahmed92b@gmail.com)
