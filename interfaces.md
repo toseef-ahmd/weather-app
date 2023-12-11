@@ -9,7 +9,7 @@ This documentation outlines the structure of various interfaces used to represen
 
   IWeatherInfo is a basic interface for representing general weather information.
 
-  Fields:'
+  **Fields:**'
   
   summary: string - A brief description of the weather condition.
   
@@ -20,7 +20,7 @@ This documentation outlines the structure of various interfaces used to represen
 
   ITemperature represents temperature data.`
 
-  Fields:
+  **Fields:**
   
   temperature: number - The current temperature.`
 
@@ -29,7 +29,7 @@ This documentation outlines the structure of various interfaces used to represen
 
   IDateTime provides date and time information in the context of weather data.
 
-  Fields:
+  **Fields:**
   
   datetime: Date - The specific date and time, represented as a Date object.
 
@@ -37,7 +37,7 @@ This documentation outlines the structure of various interfaces used to represen
 
 ICurrentWeather extends multiple interfaces to provide a comprehensive view of the current weather conditions.
 
-  Fields:
+  **Fields:**
   
   Inherits temperature from ITemperature.
   
@@ -57,7 +57,7 @@ ICurrentWeather extends multiple interfaces to provide a comprehensive view of t
 
 IDailyWeather extends IWeatherInfo and IDateTime for daily weather forecasts.
 
-  Fields:
+ **Fields:**
   
   Inherits summary and icon from IWeatherInfo.
   
@@ -70,7 +70,7 @@ IDailyWeather extends IWeatherInfo and IDateTime for daily weather forecasts.
 ### IHourlyWeather
   IHourlyWeather extends ITemperature and IDateTime, specifically for hourly weather data.
 
-  Fields:
+  **Fields:**
   
   Inherits temperature from ITemperature.
   
