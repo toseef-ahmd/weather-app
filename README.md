@@ -25,6 +25,12 @@ cd weather-app
 4. Install dependencies:
 npm install
 
+5. Linting
+npm run lint: checks for linting errors to ensure code consistency.
+
+6. Format
+npm run format: Formats the code using prettier.
+
 ## Running the Application
 
 To launch Weather Dashboard in development mode:
@@ -33,6 +39,11 @@ To launch Weather Dashboard in development mode:
 npm run dev
 
 2. The application will start on [http://localhost:3000](http://localhost:3000)
+
+
+## Build
+
+Execute npm run build for building the app.
 
 ## Built With
 
