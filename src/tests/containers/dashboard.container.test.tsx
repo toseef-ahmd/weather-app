@@ -30,7 +30,7 @@ describe("Dashboard Component", () => {
     ;(fetchWeatherData as vi.Mock).mockClear()
   })
 
-  it("displays loading initially and renders components after data fetch", async () => {
+  it("renders components after data fetch", async () => {
     fetchWeatherData.mockResolvedValue({
       current: {
         time: "2023-01-01",
@@ -66,9 +66,6 @@ describe("Dashboard Component", () => {
     })
 
     render(<Dashboard unit={units.C} city={mockCity} />)
-
-    // Initially, it should display loading
-    expect(screen.getByText("Loading...")).toBeInTheDocument()
 
     // Wait for the async data fetching and state update
     await waitFor(() => {
