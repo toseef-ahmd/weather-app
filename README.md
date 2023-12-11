@@ -19,9 +19,10 @@ With the prerequisites in place, follow these steps to install Weather Dashboard
 git clone [https://github.com/toseef-ahmd/weather-app.git](https://github.com/toseef-ahmd/weather-app.git)
 
 2. Navigate to the project directory:
+
 cd weather-app
 
-3. Install dependencies:
+4. Install dependencies:
 npm install
 
 ## Running the Application
@@ -52,6 +53,7 @@ Weather Dashboard seamlessly integrates three key components:
 
 - **Current Weather**: Displays real-time weather conditions, including temperature, humidity, and wind speed, providing a snapshot of the current weather situation.
 - **Weekly Highlight**: Presents a comprehensive 7-day forecast, enabling users to plan ahead and prepare for the upcoming weather patterns.
+- **Daily Component**: Renders inside the Weekly Component. each card representing one day.
 - **Hourly Chart**: Visualizes temperature changes over the course of a day, offering insights into temperature trends and potential temperature fluctuations.
 
 ## Dependencies
