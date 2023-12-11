@@ -102,7 +102,7 @@ Weather Dashboard provides various scripts for managing the application:
 ## Credits 
 
 [Meteocons](https://bas.dev/work/meteocons) for the svgs.
-[stellasphere](https://gist.github.com/stellasphere) for WMO code mapping with images.
+[stellasphere](https://gist.github.com/stellasphere) for WMO codes JSON file.
 
 ## Contributing
 
