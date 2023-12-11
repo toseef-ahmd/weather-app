@@ -16,10 +16,10 @@ Before diving into Weather Dashboard, ensure you have the following prerequisite
 With the prerequisites in place, follow these steps to install Weather Dashboard:
 
 1. Clone the repository:
-git clone [your-repo-link]
+git clone [your-repo-link](https://github.com/toseef-ahmd/weather-app.git)
 
 2. Navigate to the project directory:
-git clone [your-repo-link]
+git clone [your-repo-link](weather-app)
 
 3. Install dependencies:
 npm install
