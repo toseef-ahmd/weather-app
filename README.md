@@ -2,8 +2,9 @@
 
 ## Introduction
 
-Welcome to Weather Dashboard, a comprehensive weather application built with modern technologies like React, Vite, and TypeScript. Immerse yourself in a sleek and intuitive interface that delivers real-time weather updates, weekly forecasts, and hourly temperature trends.
+Welcome to Weather Dashboard, a demo weather application built with technologies like React, Vite, and TypeScript and Tailwind. The App fetches data from open-meteo and delivers real-time weather updates, weekly forecasts, and hourly temperature trends.
 
+Visit live website on [https://weather-69cwsj03t-comsian106.vercel.app/](https://weather-69cwsj03t-comsian106.vercel.app/)
 ## Prerequisites
 
 Before diving into Weather Dashboard, ensure you have the following prerequisites:
@@ -20,30 +21,30 @@ git clone [https://github.com/toseef-ahmd/weather-app.git](https://github.com/to
 
 2. Navigate to the project directory:
 
-cd weather-app
+  `cd weather-app`
 
 4. Install dependencies:
 
-`npm install`
+  `npm install`
 
 5. Linting
 
-`npm run lint`
+  `npm run lint`
 
-Checks for linting errors to ensure code consistency.
+  Checks for linting errors to ensure code consistency.
 
 6. Format
 
-`npm run format`
+  `npm run format`
 
-Formats the code using prettier.
+  Formats the code using prettier.
 
 ## Running the Application
 
 To launch Weather Dashboard in development mode:
 
 1. Execute the command:
-npm run dev
+  `npm run dev`
 
 2. The application will start on [http://localhost:3000](http://localhost:3000)
 
