@@ -44,14 +44,15 @@ git clone [https://github.com/toseef-ahmd/weather-app.git](https://github.com/to
 To launch Weather Dashboard in development mode:
 
 1. Execute the command:
+   
   `npm run dev`
 
-2. The application will start on [http://localhost:3000](http://localhost:3000)
+3. The application will start on [http://localhost:3000](http://localhost:3000)
 
 
 ## Build
 
-Execute npm run build for building the app.
+Execute `npm run build` for building the app.
 
 ## Built With
 
