@@ -78,6 +78,11 @@ Weather Dashboard provides various scripts for managing the application:
 - `npm run test`: Executes the test suite to ensure code quality and functionality
 - `npm run lint`: Checks the codebase for potential errors and enforces coding standards
 - `npm run format`: Formats the code according to predefined code styles
+  
+## Credits 
+
+[Meteocons](https://bas.dev/work/meteocons) for the svgs.
+[stellasphere](https://gist.github.com/stellasphere) for WMO code mapping with images.
 
 ## Contributing
 
