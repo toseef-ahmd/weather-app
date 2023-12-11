@@ -16,15 +16,22 @@ Before diving into Weather Dashboard, ensure you have the following prerequisite
 With the prerequisites in place, follow these steps to install Weather Dashboard:
 
 1. Clone the repository:
-git clone [your-repo-link](https://github.com/toseef-ahmd/weather-app.git)
+git clone [https://github.com/toseef-ahmd/weather-app.git](https://github.com/toseef-ahmd/weather-app.git)
 
 2. Navigate to the project directory:
-git clone [your-repo-link](weather-app)
+cd weather-app
 
 3. Install dependencies:
 npm install
 
+## Running the Application
 
+To launch Weather Dashboard in development mode:
+
+1. Execute the command:
+npm run dev
+
+2. The application will start on [http://localhost:3000](http://localhost:3000)
 
 ## Built With
 
@@ -38,15 +45,6 @@ Weather Dashboard leverages a robust foundation of technologies:
 ## Data Source
 
 Weather data is sourced from [Open-Meteo](https://open-meteo.com/), a reliable weather API provider. Visit Open-Meteo for more details on their data services.
-
-## Running the Application
-
-To launch Weather Dashboard in development mode:
-
-1. Execute the command:
-npm run dev
-
-2. The application will start on [http://localhost:3000](http://localhost:3000)
 
 ## Components
 
