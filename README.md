@@ -29,10 +29,13 @@ cd weather-app
 5. Linting
 
 `npm run lint`
+
 Checks for linting errors to ensure code consistency.
 
 6. Format
+
 `npm run format`
+
 Formats the code using prettier.
 
 ## Running the Application
